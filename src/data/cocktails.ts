@@ -47,7 +47,7 @@ export const cocktails: Cocktail[] = [
     {
         id: '3',
         name: 'Martini',
-        image: 'https://images.unsplash.com/photo-1575023782549-62ca2d2f3b8e?auto=format&fit=crop&w=800&q=80',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_martini.png',
         category: 'IBA Official',
         glass: 'Cocktail glass',
         instructions: [
@@ -66,7 +66,7 @@ export const cocktails: Cocktail[] = [
     {
         id: '4',
         name: 'Margarita',
-        image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_margarita.jpg',
         category: 'IBA Official',
         glass: 'Margarita glass',
         instructions: [
@@ -84,7 +84,7 @@ export const cocktails: Cocktail[] = [
     {
         id: '5',
         name: 'Negroni',
-        image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80', // Placeholder, need better image
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_negroni.jpg',
         category: 'IBA Official',
         glass: 'Old Fashioned glass',
         instructions: [
@@ -101,7 +101,7 @@ export const cocktails: Cocktail[] = [
     {
         id: '6',
         name: 'Cosmopolitan',
-        image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80', // Placeholder
+        image: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80', // Placeholder
         category: 'IBA Official',
         glass: 'Cocktail glass',
         instructions: [
@@ -115,5 +115,104 @@ export const cocktails: Cocktail[] = [
         ],
         history: 'A cosmopolitan, or informally a cosmo, is a cocktail made with vodka, triple sec, cranberry juice, and freshly squeezed or sweetened lime juice.',
         tags: ['Sweet', 'Party', 'Vodka']
+    },
+    {
+        id: '7',
+        name: 'Whiskey Sour',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_whiskey_sour.png',
+        category: 'IBA Official',
+        glass: 'Old Fashioned glass',
+        instructions: [
+            'Pour all ingredients into cocktail shaker filled with ice.',
+            'Shake well.',
+            'Strain in chilled cocktail glass.',
+            'Garnish with half orange slice and maraschino cherry.'
+        ],
+        ingredients: [
+            { name: 'Bourbon Whiskey', amount: '45ml' },
+            { name: 'Fresh Lemon Juice', amount: '25ml' },
+            { name: 'Sugar Syrup', amount: '20ml' },
+            { name: 'Egg White (Optional)', amount: 'Few drops' }
+        ],
+        history: 'The Whiskey Sour is a mixed drink containing whiskey (often bourbon), lemon juice, sugar, and optionally, a dash of egg white. It is a traditional cocktail that dates back to the 1870s.',
+        tags: ['Classic', 'Sour', 'Whiskey']
+    },
+    {
+        id: '8',
+        name: 'Daiquiri',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_daiquiri.png',
+        category: 'IBA Official',
+        glass: 'Cocktail glass',
+        instructions: [
+            'Pour all ingredients into shaker with ice cubes.',
+            'Shake well.',
+            'Strain in chilled cocktail glass.'
+        ],
+        ingredients: [
+            { name: 'White Rum', amount: '60ml' },
+            { name: 'Fresh Lime Juice', amount: '20ml' },
+            { name: 'Superfine Sugar', amount: '2 tsp' }
+        ],
+        history: 'The Daiquiri is a family of cocktails whose main ingredients are rum, citrus juice (typically lime juice), and sugar or other sweetener. It is one of the six basic drinks listed in David A. Embury\'s The Fine Art of Mixing Drinks.',
+        tags: ['Classic', 'Sour', 'Rum']
+    },
+    {
+        id: '9',
+        name: 'Manhattan',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_manhattan.png',
+        category: 'IBA Official',
+        glass: 'Cocktail glass',
+        instructions: [
+            'Pour all ingredients into mixing glass with ice cubes.',
+            'Stir well.',
+            'Strain into chilled cocktail glass.',
+            'Garnish with cocktail cherry.'
+        ],
+        ingredients: [
+            { name: 'Rye Whiskey', amount: '50ml' },
+            { name: 'Sweet Red Vermouth', amount: '20ml' },
+            { name: 'Angostura Bitters', amount: '1 dash' }
+        ],
+        history: 'A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters. While rye is the traditional whiskey of choice, other commonly used whiskies include Canadian whisky, bourbon, blended whiskey, and Tennessee whiskey.',
+        tags: ['Classic', 'Strong', 'Whiskey']
+    },
+    {
+        id: '10',
+        name: 'Moscow Mule',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_moscow_mule.png',
+        category: 'IBA Official',
+        glass: 'Copper Mug',
+        instructions: [
+            'Combine vodka and ginger beer in a highball glass filled with ice.',
+            'Add lime juice.',
+            'Stir gently.',
+            'Garnish with a lime slice.'
+        ],
+        ingredients: [
+            { name: 'Vodka', amount: '45ml' },
+            { name: 'Ginger Beer', amount: '120ml' },
+            { name: 'Fresh Lime Juice', amount: '10ml' }
+        ],
+        history: 'The Moscow mule is a cocktail made with vodka, spicy ginger beer, and lime juice, garnished with a slice or wedge of lime. It is a type of buck, therefore sometimes called a vodka buck.',
+        tags: ['Refreshing', 'Spicy', 'Vodka']
+    },
+    {
+        id: '11',
+        name: 'Piña Colada',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_pina_colada.png',
+        category: 'IBA Official',
+        glass: 'Hurricane glass',
+        instructions: [
+            'Blend all the ingredients with ice in a electric blender.',
+            'Pour into a large glass or Hurricane glass.',
+            'Garnish with a slice of pineapple and a cocktail cherry.'
+        ],
+        ingredients: [
+            { name: 'White Rum', amount: '50ml' },
+            { name: 'Coconut Cream', amount: '30ml' },
+            { name: 'Fresh Pineapple Juice', amount: '50ml' }
+        ],
+        history: 'The Piña Colada is a sweet cocktail made with rum, cream of coconut or coconut milk, and pineapple juice, usually served either blended or shaken with ice. It may be garnished with either a pineapple wedge, maraschino cherry, or both.',
+        tags: ['Sweet', 'Tropical', 'Rum']
     }
 ];
