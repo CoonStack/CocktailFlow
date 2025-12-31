@@ -214,5 +214,24 @@ export const cocktails: Cocktail[] = [
         ],
         history: 'The Piña Colada is a sweet cocktail made with rum, cream of coconut or coconut milk, and pineapple juice, usually served either blended or shaken with ice. It may be garnished with either a pineapple wedge, maraschino cherry, or both.',
         tags: ['Sweet', 'Tropical', 'Rum']
+    },
+    {
+        id: '12',
+        name: 'Grasshopper',
+        image: import.meta.env.BASE_URL + 'cocktails/cocktail_grasshopper.jpg',
+        category: 'IBA Official',
+        glass: 'Cocktail glass',
+        instructions: [
+            'Pour all ingredients into cocktail shaker filled with ice.',
+            'Shake vigorously.',
+            'Strain into chilled cocktail glass.'
+        ],
+        ingredients: [
+            { name: 'Crème de Menthe (Green)', amount: '30ml' },
+            { name: 'Crème de Cacao (White)', amount: '30ml' },
+            { name: 'Fresh Cream', amount: '30ml' }
+        ],
+        history: 'The Grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink derives from its green color, which comes from crème de menthe. The drink reputedly originated at Tujague\'s, a landmark bar in the French Quarter of New Orleans, Louisiana, and was invented by its owner, Philip Guichet, for a cocktail competition in New York City in 1918, where he won second place.',
+        tags: ['Sweet', 'After Dinner', 'Mint']
     }
 ];
